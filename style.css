@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./assets/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #e2e1e5;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.cart {
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+    padding: 55px 50px;
+    border: 1px solid #e2e1e570;
+    margin-top: 3%;
+    background: #070d0d70;
+    border-radius: 25px;
+    backdrop-filter: blur(5px);  
+}
+
+.cart__title {
+    display: flex;
+    align-self: center;
+    font-family: 'Quintessential Sans', serif;
+    font-size: 48px;
+    margin-bottom: 35px;
+}
+
+.cart__items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cart__item {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.cart__img {
+    width: 100px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.cart__info {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart__item-title,
+.cart__number,
+.cart__totalPriceNum,
+.cart__sum {
+    font-family: 'Quintessential display', serif;
+    font-size: 32px;
+}
+
+.cart__item-desc {
+    font-family: 'Quattrocento Sans', serif;
+    font-size: 16px;
+    color: #cecece;
+    padding-top: 8px;
+}
+
+.cart__price {
+    display: flex;
+    align-items: flex-start;
+    justify-self: end;
+}
+
+.cart__price-wrapper {
+    display: flex;
+    align-items: flex-end;
+}
+
+.cart__currentcy {
+    display: flex;
+    justify-self: flex-end;
+    font-family: 'Quintessential display', serif;
+    font-size: 16px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+.cart__controls {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart__totalPrice {
+    display: flex;
+    align-items: flex-start;
+    justify-self: end;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-family: 'Quattrocento Sans', serif;
+    font-weight: 700;
+    font-size: 28px;
+    border-radius: 10px;
+    background-color: rgb(255, 209, 125);
+    color: #070d0d;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(233, 186, 98);
+}
+
+
+
